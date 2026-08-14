@@ -1,10 +1,11 @@
 package valentinaignacia;
 
 public class Main {
-    public static void main(String[] args) {
-
+    static void main(String[] args) {
+        /* Creación objeto */
         var libro1 = new Libro("Harry Potter", "JKR", false);
 
+        /* Correr métodos */
         libro1.leer();
         libro1.getDatos();
 
