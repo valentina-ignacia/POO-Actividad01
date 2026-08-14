@@ -42,5 +42,25 @@ public class Main {
         cuenta1.girar(10000);
         System.out.println("Saldo: "+cuenta1.consultarSaldo());
 
+        /* Caso 4 Ejercicio 5 */
+        Estudiante estudiante1 = new Estudiante("Valentina","20.943.330-3","Analista Programador",6.5);
+        estudiante1.mostrarInformacion();
+        estudiante1.actualizarPromedio(7.0);
+        System.out.println("Promedio: "+estudiante1.consultarPromedio());
+
+        /* Caso 4 Ejercicio 6 */
+        Curso curso1 = new Curso("POO", "DSY1102",30,25);
+        System.out.println("Cupos disponibles: "+ curso1.consultarCupos());
+        curso1.inscribirEstudiante();
+        System.out.println("Cupos disponibles: "+ curso1.consultarCupos());
+        curso1.borrarEstudiante();
+        System.out.println("Cupos disponibles: "+ curso1.consultarCupos());
+
+        /* Caso 5 Ejercicio 7 */
+        Mascota mascota1 = new Mascota("Copito","Poodle",2);
+        mascota1.mostrarInfo();
+        mascota1.internar();
+        System.out.println("¿Está internado? "+ mascota1.consultaEstado());
+
     }
 }
