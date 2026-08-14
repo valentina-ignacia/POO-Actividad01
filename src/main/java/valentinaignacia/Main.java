@@ -23,5 +23,15 @@ public class Main {
         }
 
         /* Caso 1 Ejercicio 2 */
+        Prestamo prestamo1 = new Prestamo("Valentina", "El Principito", 1408,1409);
+        prestamo1.mostrarInfo();
+        prestamo1.devolverLibro();
+        prestamo1.mostrarInfo();
+
+        /* Caso 2 Ejercicio 3 */
+        Producto producto1 = new Notebook("Lenovo","Notebook",500000,10);
+        producto1.mostrarInformacion();
+        producto1.venderProducto(1);
+        System.out.println("Stock: " + producto1.consultarStock());
     }
 }
