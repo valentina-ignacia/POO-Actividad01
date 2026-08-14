@@ -33,5 +33,14 @@ public class Main {
         producto1.mostrarInformacion();
         producto1.venderProducto(1);
         System.out.println("Stock: " + producto1.consultarStock());
+
+        /* Caso 3 Ejercicio 4 */
+        CuentaBancaria cuenta1 = new CuentaBancaria("Valentina",123456789,100000,"Corriente");
+        System.out.println("Saldo: "+ cuenta1.consultarSaldo());
+        cuenta1.depositar(20000);
+        System.out.println("Saldo: "+ cuenta1.consultarSaldo());
+        cuenta1.girar(10000);
+        System.out.println("Saldo: "+cuenta1.consultarSaldo());
+
     }
 }
