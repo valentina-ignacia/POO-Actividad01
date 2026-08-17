@@ -68,5 +68,40 @@ public class Main {
         pedido1.calcularTotal(5);
         pedido1.actualizarEstado();
         pedido1.infoPedido();
+
+        /* Caso 7 Ejercicio 9 */
+        EntradaCine entrada1 = new EntradaCine("Avengers", "sala 4",6000);
+        entrada1.mostrarDatos();
+        entrada1.usarEntrada();
+        System.out.println("¿Entrada utilizada?: " + entrada1.estaUtilizada());
+
+        /* Caso 8 Ejercicio 10 */
+        Paciente paciente1 = new Paciente("Valentina","20.943.330-3",24);
+        paciente1.mostrarDatos();
+        paciente1.internar();
+        paciente1.darDeAlta();
+
+        /* Caso 8 Ejercicio 11 */
+        CitaMedica cita1 = new CitaMedica("Valentina", "16/08/26","10:30");
+        cita1.mostrarDatos();
+        cita1.atenderCita();
+        cita1.mostrarDatos();
+        cita1.cancelarCita();
+
+        /* Caso 9 Ejercicio 12 */
+        BusEscolar bus1 = new BusEscolar("ABC12", 40, "Maipú - Cerro Navia");
+        bus1.mostrarDatos();
+        System.out.println("¿Está operativo?: " + bus1.estaOperativo());
+        System.out.println("Capacidad del bus: " + bus1.consultarCapacidad() + " estudiantes");
+
+        /* Caso 10 Ejercicio 13 */
+        Socio socio1 = new Socio("Valentina", "Plan Premium");
+        socio1.mostrarDatos();
+        socio1.registrarAsistencia();
+        System.out.println("Plan del socio: " + socio1.consultarPlan());
+        socio1.mostrarDatos();
+
+
+
     }
 }
