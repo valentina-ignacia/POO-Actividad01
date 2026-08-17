@@ -62,5 +62,11 @@ public class Main {
         mascota1.internar();
         System.out.println("¿Está internado? "+ mascota1.consultaEstado());
 
+        /* Caso 6 Ejercicio 8 */
+        Pedido pedido1 = new Pedido(0001,"Valentina",10000);
+        pedido1.infoPedido();
+        pedido1.calcularTotal(5);
+        pedido1.actualizarEstado();
+        pedido1.infoPedido();
     }
 }
