@@ -99,7 +99,7 @@ public class Main {
         socio1.mostrarDatos();
         socio1.registrarAsistencia();
         System.out.println("Plan del socio: " + socio1.consultarPlan());
-        socio1.mostrarDatos();
+        socio1.mostrarDatos();/*
 
 
 
